@@ -14,3 +14,7 @@ typings/
 
 # Optional eslint cache
 .eslintcache
+
+# Any generated compiled TS
+*.js
+dist
