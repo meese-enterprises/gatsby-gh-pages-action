@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: meese-enterprises/gatsby-gh-pages-action@v2
+      - uses: meese-enterprises/gatsby-publish-without-jekyll@v2
         with:
           access-token: ${{ secrets.GH_ACCESS_TOKEN }}
 ```
@@ -113,7 +113,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: meese-enterprises/gatsby-gh-pages-action@v2
+      - uses: meese-enterprises/gatsby-publish-without-jekyll@v2
         with:
           access-token: ${{ secrets.GH_ACCESS_TOKEN }}
           deploy-branch: gh-pages
@@ -135,7 +135,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: meese-enterprises/gatsby-gh-pages-action@v2
+      - uses: meese-enterprises/gatsby-publish-without-jekyll@v2
         with:
           access-token: ${{ secrets.GH_ACCESS_TOKEN }}
           deploy-branch: gh-pages
