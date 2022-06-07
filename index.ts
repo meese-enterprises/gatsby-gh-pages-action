@@ -50,6 +50,13 @@ async function run(): Promise<void> {
       console.log("Finished copying CNAME.");
     }
 
+    const noJekyllExists = await ioUtil.exists(`${workingDir}/.nojekyll`);
+    if (noJekyllExists) {
+      console.log("Copying .nojekyll over.");
+      await io.cp(`${workingDir}/.nojekyll`, `${workingDir}/public/.nojekyll`, {force: true});
+      console.log("Finished copying .nojekyll.");
+    }
+
     if (skipPublish === "TRUE") {
       return console.log("Building completed successfully - skipping publish");
     }
