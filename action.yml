@@ -1,5 +1,5 @@
-name: "Gatsby Publish"
-description: "Build and deploy your Gatsby site to GitHub Pages."
+name: "Gatsby Publish without Jekyll"
+description: "Build and deploy your Gatsby site to GitHub Pages without Jekyll."
 branding:
   icon: "book-open"
   color: "purple"
