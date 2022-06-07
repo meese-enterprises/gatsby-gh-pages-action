@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
+          access-token: ${{ secrets.GH_ACCESS_TOKEN }}
 ```
 
 > **NOTE:** In order to support `npm` and `yarn`, this Action relies on having a
@@ -65,7 +65,7 @@ configuration options:
   will run from this directory.
   Provided as an [input][github-action-input].
   Defaults to the project's root.
-  
+
 - **git-config-name**: Provide a custom name that is used to author the git commit, which
   is pushed to the deploy branch.
   Provided as an [input][github-action-input].
@@ -74,9 +74,9 @@ configuration options:
 - **git-config-email**: Provide a custom email that is used to author the git commit, which
   is pushed to the deploy branch.
   Provided as an [input][github-action-input].
-  Defaults to `{actor}@users.noreply.github.com`, where `{actor}` is the GitHub username 
+  Defaults to `{actor}@users.noreply.github.com`, where `{actor}` is the GitHub username
   of the action actor.
-  
+
 ### Org or User Pages
 
 Create a repository with the format `<YOUR/ORG USERNAME>.github.io`, push your
@@ -115,7 +115,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
+          access-token: ${{ secrets.GH_ACCESS_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
 ```
@@ -137,7 +137,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
+          access-token: ${{ secrets.GH_ACCESS_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
           skip-publish: true
