@@ -1,6 +1,6 @@
 {
   "name": "gatsby-gh-pages-action",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "GitHub Action to build and deploy your Gatsby site to GitHub Pages ❤️🎩",
   "main": "dist/index.js",
   "scripts": {
@@ -24,14 +24,14 @@
   },
   "homepage": "https://github.com/meese-enterprises/gatsby-gh-pages-action#readme",
   "dependencies": {
-    "@actions/core": "^1.4.0",
+    "@actions/core": "^1.8.2",
     "@actions/exec": "^1.1.0",
     "@actions/github": "^5.0.0",
     "@actions/io": "^1.1.1"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.0",
-    "@types/node": "^15.0.0",
+    "@types/jest": "^27.0.0",
+    "@types/node": "^15.14.9",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^4.0.0",
     "@typescript-eslint/types": "^4.0.0",

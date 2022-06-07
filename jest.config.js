@@ -5,7 +5,7 @@ process.stdout.write = (str, encoding, cb) => {
   // Debug messages begin with ::
   if (str.match(/^::/)) return false;
   return processStdoutWrite(str, encoding, cb);
-}
+};
 
 module.exports = {
   clearMocks: true,
@@ -16,4 +16,4 @@ module.exports = {
     "^.+\\.ts$": "ts-jest",
   },
   verbose: true,
-}
+};
